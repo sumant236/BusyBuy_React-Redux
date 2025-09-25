@@ -95,10 +95,8 @@ The application should now be running on `http://localhost:3000`.
 * `src/config/firebase.js`: Firebase initialization and configuration.
 * `src/pages/`: The pages of the application like `loginPage`, `registerPage`, etc.
 * `src/App.js`: The main application component.
-* `README.md`: This file.
 
 ## Acknowledgements
 
 * **Google Firebase**: For the powerful and easy-to-use backend services.
 * **Redux & Redux Toolkit**: For simplifying state management in the application.
-```eof
