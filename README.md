@@ -2,6 +2,9 @@
 
 This is a real-time e-commerce cart application built with React, Redux, and Firebase. The project demonstrates a robust, scalable architecture for handling user-specific data with real-time updates.
 
+## Deployed App
+[https://busybuy-e-commerce.netlify.app/](https://busybuy-e-commerce.netlify.app/)
+
 ## Key Features
 
 * **User Authentication**: Secure anonymous authentication using Firebase to manage unique user sessions.
