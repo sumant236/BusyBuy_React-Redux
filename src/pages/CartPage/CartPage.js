@@ -22,6 +22,7 @@ const CartPage = () => {
     if (user) {
       dispatch(getAllProducts(user.uid));
     }
+    // eslint-disable-next-line
   }, [user]);
 
   const purchaseProductsHandler = async () => {
