@@ -17,10 +17,11 @@ const OrdersPage = () => {
     if (user) {
       getUserOrders();
     }
+    // eslint-disable-next-line
   }, [user]);
 
   // Fetch user orders from firestore
-  const getUserOrders = async () => {
+  async function getUserOrders() {
     setLoading(true);
     try {
       const docRef = doc(db, "userOrders", user.uid);
@@ -40,7 +41,7 @@ const OrdersPage = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }
 
   if (loading) {
     return <Loader />;
@@ -54,7 +55,7 @@ const OrdersPage = () => {
       {orders.map((order, idx) => {
         // Create an array of product objects from the order object
         const orderProducts = Object.values(order);
-        
+
         // Remove the date field, as it's not a product
         const products = orderProducts.filter(
           (item) => typeof item === "object"

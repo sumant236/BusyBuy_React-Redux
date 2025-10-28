@@ -29,6 +29,7 @@ function HomePage() {
   useEffect(() => {
     addDataToCollection();
     dispatch(getAllProducts());
+    // eslint-disable-next-line
   }, []);
 
   // Rerender the products if the search or filter parameters changez
@@ -36,6 +37,7 @@ function HomePage() {
     dispatch(
       setFilteredProducts({ searchQuery: query, priceRange, categories })
     );
+    // eslint-disable-next-line
   }, [priceRange, categories, query]);
 
   // Display loader while products are fetching using the Loader Component
