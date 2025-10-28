@@ -128,13 +128,6 @@
     justify-content: flex-start;
   }
 
-  .nav-menu.active {
-    background-color: #f7f7fa;
-    left: 0;
-    transition: all 0.5s ease;
-    padding: 2em 0em;
-  }
-
   .nav-item {
     height: 85px;
     display: flex;

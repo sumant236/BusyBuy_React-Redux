@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import {
   createUserWithEmailAndPassword,
-  setDoc,
   signInWithEmailAndPassword,
   signOut,
   updateProfile,

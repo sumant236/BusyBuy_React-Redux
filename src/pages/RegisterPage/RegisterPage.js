@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { toast } from "react-toastify";
 import styles from "./RegisterPage.module.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,7 +7,7 @@ import { getAuth } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 const RegisterPage = () => {
-  const { loading, user } = useSelector(authSelector);
+  const { loading } = useSelector(authSelector);
   const dispatch = useDispatch();
   const auth = getAuth();
   const navigate = useNavigate();

@@ -33,7 +33,7 @@ function App() {
         setIsAuthenticated(true);
       }
     });
-  }, [dispatch]);
+  }, [auth]);
 
   return (
     <div className="App">

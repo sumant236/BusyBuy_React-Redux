@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { toast } from "react-toastify";
 import styles from "./LoginPage.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -7,7 +7,7 @@ import { getAuth } from "firebase/auth";
 import { authSelector, signInUser } from "../../redux/reducers/authReducer";
 
 const LoginPage = () => {
-  const { loading, user } = useSelector(authSelector);
+  const { loading } = useSelector(authSelector);
   const dispatch = useDispatch();
   const auth = getAuth();
   const navigate = useNavigate();

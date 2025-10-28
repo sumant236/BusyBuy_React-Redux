@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 //Icons..
@@ -12,7 +11,6 @@ import { useDispatch } from "react-redux";
 import { signOutUser } from "../../redux/reducers/authReducer";
 
 const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
-  const [click, setClick] = useState(false);
   const auth = getAuth();
   const dispatch = useDispatch();
 
@@ -38,10 +36,7 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
         <NavLink to="/" className="navbar-logo">
           Busy Buy
         </NavLink>
-        <ul
-          className={click ? "nav-menu active" : "nav-menu"}
-          onClick={scrollTop}
-        >
+        <ul className={"nav-menu"} onClick={scrollTop}>
           <li className="nav-item active">
             <NavLink
               activeclassname="active-links"

@@ -61,7 +61,7 @@ const ProductDetails = ({
 
   // Function for Handling the product quantity increase
   const handleAdd = async () => {
-    const { data, docRef } = await getUserCartProducts(user.uid);
+    const { docRef } = await getUserCartProducts(user.uid);
     dispatch(
       updateProductQuantity({
         docRef,
@@ -75,7 +75,7 @@ const ProductDetails = ({
   // Handling the product quantity decrease
   const handleRemove = async () => {
     try {
-      const { data, docRef } = await getUserCartProducts(user.uid);
+      const { docRef } = await getUserCartProducts(user.uid);
 
       if (quantity === 1) {
         removeProduct();

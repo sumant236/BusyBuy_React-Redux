@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./HomePage.module.css";
 import ProductList from "../../components/Product/ProductList/ProductList";
 import FilterSidebar from "../../components/FilterSidebar/FilterSidebar";
@@ -22,7 +22,7 @@ function HomePage() {
   });
 
   const dispatch = useDispatch();
-  const { products, filteredProducts, loading, error } =
+  const { products, filteredProducts, loading } =
     useSelector(productSelector);
 
   // Fetch products on app mount
